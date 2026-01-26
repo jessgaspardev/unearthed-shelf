@@ -1,0 +1,34 @@
+---
+import Heading from "./Heading.astro";
+import Link from "./Link.astro";
+
+const categories = [
+    { title: 'All', href:'/' },
+    { title: 'Aliens', href:'/aliens' },
+    { title: 'Alternate History', href:'/alternate-history' },
+    { title: 'Apocalyptic', href:'/apocalyptic' },
+    { title: 'Cyberpunk', href:'/cyberpunk' },
+    { title: 'Dystopia', href:'/dystopian' },
+    { title: 'Hard Sci-fi', href:'/hard-sci-fi' },
+    { title: 'Military', href:'/military' },
+    { title: 'Robots', href:'/robots' },
+    { title: 'Space Opera', href:'/space-opera' },
+    { title: 'Steampunk', href:'/steampunk' },
+    { title: 'Time Travel', href:'/time-travel' }
+]
+
+interface Props {
+    genre?: string;
+}
+
+const { genre } = Astro.props;
+---
+<ul class="flex flex-wrap items-center justify-center gap-y-4 gap-x-6 m-8">
+    {
+        categories.map((category) => (
+            <li><Link variant={'inline'} href={category.href}>{category.title}</Link></li>
+        ))
+    }   
+</ul>
+
+<Heading tagName='h2' tagSize='h5' class="text-center p-8"><span class='text-primary'>{genre}</span> Books</Heading>

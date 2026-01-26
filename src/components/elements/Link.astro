@@ -1,0 +1,30 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<'a'> {
+    href: string;
+    variant: 'inline' | 'button' | 'buttonSecondary' | 'nav';
+    newWindow?: boolean;
+}
+
+const { href, variant, newWindow = false, class: className, ...rest} = Astro.props;
+
+const baseStyle = ''
+
+// styling for each variant
+const variantStyle = {
+    inline: "font-mono text-primary hover:text-accent",
+    button: "font-mono px-6 py-3 rounded-sm bg-primary text-dark hover:bg-accent hover:text-light uppercase",
+    buttonSecondary: "font-mono px-6 py-3 rounded-sm bg-light text-dark hover:bg-accent hover:text-light uppercase",
+    nav: "font-display text-24 text-primary hover:text-accent"
+}
+---
+
+<a href={href} 
+    class:list={[baseStyle, variantStyle[variant], className]}
+    target={newWindow ? "_blank" : undefined}
+    rel={newWindow ? "noopener noreferrer" : undefined}
+    {...rest}>
+    <slot />
+</a>
+

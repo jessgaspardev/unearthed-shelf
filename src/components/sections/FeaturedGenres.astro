@@ -1,0 +1,17 @@
+---
+// assets
+import spaceOpera from '../../assets/bgs/space-opera.jpg';
+import aliens from '../../assets/bgs/aliens.jpg';
+import military from '../../assets/bgs/military.jpg';
+// components
+import CategoryCard from "../elements/CategoryCard.astro";
+import CategoryTitle from '../elements/CategoryTitle.astro';
+---
+<section aria-label="Featured Genres" class="my-8">
+    <CategoryTitle title="Featured Genres">Featured <span class="text-primary">Genres</span></CategoryTitle>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <CategoryCard title="Space Opera" image={spaceOpera} href="/"/>
+        <CategoryCard title="Aliens" image={aliens} href="/"/>
+        <CategoryCard title="Military" image={military} href="/"/>
+    </div>
+</section>

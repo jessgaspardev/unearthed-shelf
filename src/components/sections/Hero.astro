@@ -1,0 +1,33 @@
+---
+// components
+import Heading from "../elements/Heading.astro";
+import Text from "../elements/Text.astro";
+import Link from "../elements/Link.astro";
+
+import bg from "../../assets/bgs/peter-andrew-jones.jpg";
+import { getImage } from "astro:assets";
+const background = await getImage({src: bg, format: 'jpg'})
+---
+<header class="hero h-1/3 bg-fit bg-no-repeat bg-center md:bg-left p-10">
+    <div class="flex flex-col md:items-end items-center justify-center md:justify-between gap-8 md:gap-0 h-full">
+        <div class="text-center md:text-right">
+            <Heading tagName="h1" tagSize="h1">Unearthed Shelf</Heading>
+            <Text variant={'lg'} class="text-primary">Classic Sci-Fi Books</Text>
+        </div>
+        <div class="text-center md:text-right max-w-187.5">
+            <Text variant={'md'} class="mb-6">Finding classic science-fiction novels, popular series, hidden gems, and underrated masterpieces <span class="text-primary">has never been easier!</span></Text>
+        </div>  
+    </div>
+</header>
+
+<style define:vars={{ bgImage: `url('${background.src}')` }}>
+  .hero {
+    background-image: linear-gradient(to bottom, transparent, #1E1E1E), var(--bgImage);
+  }
+  
+  @media (min-width: 988px) {
+    .hero {
+      background-image: linear-gradient(to right, transparent, #1E1E1E 60%), var(--bgImage);
+    }
+  }
+</style>

@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import Heading from "./Heading.astro";
+const { image, title, href } = Astro.props;
+---
+
+<div class="relative group">
+  <a href={href} class="block">
+    <div class="relative overflow-hidden lg:h-175 md:h-137.5 h-100">
+      <Image 
+        src={image} 
+        alt=""
+        class="w-full h-full object-cover"
+        />
+      <div class="absolute inset-0 bg-[radial-gradient(at_50%_50%,transparent_0%,#1E1E1E_100%)] transition-opacity duration-300 group-hover:opacity-0"></div>
+    </div>
+    <Heading tagName="h3" tagSize="h5" class="group-hover:text-accent p-4">{title}</Heading>
+  </a>
+</div>

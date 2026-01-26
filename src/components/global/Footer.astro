@@ -1,0 +1,14 @@
+---
+import Text from "../elements/Text.astro"
+import Link from "../elements/Link.astro"
+
+const navigation = [
+    { title: 'Privacy Policy', href:'/privacy-policy' },
+]
+---
+<footer class="flex md:flex-row flex-col md:justify-between gap-8 border-t-2 border-primary p-8">
+    <div>
+        <Text variant={'lg'}>Unearthed Shelf</Text>
+        <Text variant={'sm'}>Built by <Link variant={'inline'} href="https://jessgaspar.dev" newWindow>Jess Gaspar</Link></Text>
+    </div>
+</footer>

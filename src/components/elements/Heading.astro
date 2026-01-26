@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+const headingOptions = {
+    h1: 'lg:text-200/40 md:text-128/25 sm:text-96/20 text-48/10',
+    h2: 'lg:text-128/25 md:text-96/20 sm:text-80/15 text-40/10',
+    h3: 'lg:text-96/20 md:text-80/15 sm:text-64/15 text-32',
+    h4: 'lg:text-80/15 md:text-64/15 sm:text-48/10 text-24',
+    h5: 'lg:text-64/15 md:text-48/10 sm:text-40/10 text-16',
+    h6: 'lg:text-48/10 md:text-40/10 sm:text-32/5 text-16'
+}
+
+interface Props extends HTMLAttributes<'h1'> {
+    tagName: keyof typeof headingOptions;
+    tagSize: keyof typeof headingOptions;
+}
+
+const { tagName, tagSize, class: className, ...rest} = Astro.props;
+const Tag = tagName;
+
+const baseStyle = 'font-display text-light uppercase tracking-light leading-none';
+---
+
+<Tag class:list={[baseStyle, headingOptions[tagSize], className]} {...rest}><slot /></Tag>

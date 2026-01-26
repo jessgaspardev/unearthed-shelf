@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+    /* COLORS */
+    --color-dark: #1E1E1E;
+    --color-light: #F3EFE0;
+    --color-primary: #FEB05D;
+    --color-accent: #5A7ACD;
+
+    /* FONTS */
+    --font-display: 'Shrikhand', system-ui;
+    --font-mono: 'Special Elite', system-ui;
+
+    /* TEXT SIZES (--text-px) */
+    --text-200: 12.5rem;
+    --text-128: 8rem;
+    --text-96: 6rem;
+    --text-80: 5rem;
+    --text-64: 4rem;
+    --text-48: 3rem;
+    --text-40: 2.5rem;
+    --text-32: 2rem;
+    --text-24: 1.5rem;
+    --text-20: 1.25rem;
+    --text-16: 1rem;
+    --text-12: 0.75rem;
+
+    /* BREAKPOINTS */
+    --breakpoint-xsm: 320px;
+    --breakpoint-sm: 730px;
+    --breakpoint-md: 988px;
+    --breakpoint-lg: 1364px;
+    --breakpoint-xl: 1440px;
+}

@@ -1,0 +1,61 @@
+---
+// components
+import Text from "../elements/Text.astro"
+import Link from "../elements/Link.astro"
+
+const navigation = [
+    { title: 'Genres', href: '/genres' },
+    { title: 'Decades', href: '/decades' },
+    { title: 'Popular', href: '/popular' },
+    { title: 'Authors', href: '/authors' }
+]
+---
+<nav class="flex justify-between py-8 fixed top-0 right-8 left-8 z-50">
+    <div>
+        <Text variant={'lg'}><span class='text-primary'>U</span>S</Text>
+    </div>
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex gap-8">
+        {
+            navigation.map((link, index) => (
+                <li>
+                    <Link href={link.href} variant={'nav'}>{link.title}</Link>
+                </li>
+            ))
+        }
+    </ul>
+    <!-- Mobile Nav -->
+    <div class="md:hidden">
+        <button id="open-nav" aria-label="Open Navigation">
+            Open
+        </button>
+        <div class="hidden fixed inset-0 bg-dark z-50" id="mobile-nav">
+            <div class="flex flex-col items-center justify-center h-full">
+                <button id="close-nav" aria-label="Close Navigation" class="absolute top-6 right-6 text-white">
+                   Close
+                </button>
+                <ul class="flex flex-col p-6 gap-5 md:hidden text-center">
+                    {
+                        navigation.map((link) => (
+                            <li><Link href={link.href} variant={'nav'}>{link.title}</Link></li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const mobileNav = document.querySelector('#mobile-nav') as HTMLUListElement;
+    const openBtn = document.querySelector('#open-nav') as HTMLButtonElement;
+    const closeBtn = document.querySelector('#close-nav') as HTMLButtonElement;
+
+    openBtn.addEventListener("click", () => {
+        mobileNav.classList.remove('hidden');
+    })
+
+    closeBtn.addEventListener("click", () => {
+        mobileNav.classList.add('hidden');
+    })
+</script>

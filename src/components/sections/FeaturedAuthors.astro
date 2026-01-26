@@ -1,0 +1,18 @@
+---
+// assets
+import ursula from '../../assets/bgs/ursulakleguin.jpg';
+import arthur from '../../assets/bgs/arthurcclarke.jpg';
+import robert from '../../assets/bgs/robertheinlein.jpg';
+// components
+import CategoryCard from "../elements/CategoryCard.astro";
+import CategoryTitle from '../elements/CategoryTitle.astro';
+---
+
+<section aria-label="Featured Authors" class="my-8">
+    <CategoryTitle>Featured <span class="text-primary">Authors</span></CategoryTitle>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <CategoryCard title="Arthur C. Clarke" image={arthur} href="/"/>
+        <CategoryCard title="Ursula K. Le Guin" image={ursula} href="/"/>
+        <CategoryCard title="Robert Heinlein" image={robert} href="/"/>
+    </div>
+</section>

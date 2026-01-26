@@ -1,0 +1,21 @@
+---
+import Book from "../elements/Book.astro";
+
+interface Props {
+  genre?: "Aliens" | "Alternate History" | "Apocalyptic" | "Cyberpunk" | "Dystopian" | "Hard Sci-Fi" | "Military" | "Robots" | "Space Opera" | "Steampunk" | "Time Travel";
+}
+
+const { genre } = Astro.props;
+
+import { getCollection } from "astro:content";
+const books = await getCollection("books");
+const filteredBooks = genre ? books.filter(book => book.data.genre === genre) : books;
+---
+
+<section class="flex flex-wrap justify-center gap-8 p-8">
+    {
+        filteredBooks.map((book) => (
+            <Book image={book.data.cover} href={book.data.slug} title={book.data.title} />
+        ))
+    }
+</section>

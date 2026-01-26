@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import Text from "./Text.astro";
+const { image, title, href } = Astro.props;
+---
+
+<div class="relative group w-60">
+  <a href={href} class="flex flex-col gap-4">
+    <div class="relative overflow-hidden w-60 h-90">
+      <Image 
+        src={image} 
+        alt=""
+        class="w-full h-full object-cover"
+        />
+      <div class="absolute inset-0 bg-[radial-gradient(at_30%_30%,transparent_0%,#1E1E1E_100%)] transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+    </div>
+    <Text variant={'md'} class="group-hover:text-accent">{title}</Text>
+  </a>
+</div>

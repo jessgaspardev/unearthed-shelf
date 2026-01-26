@@ -1,0 +1,23 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"p"> {
+    variant?: "xsm" | "sm" | "md" | "lg" | "xl"
+}
+
+const { variant = "sm", class: className, ...rest } = Astro.props;
+
+// common styling for all text variants
+const baseStyle = "font-mono text-light";
+
+// different font sizes and styling for each text variant
+const variantStyle = {
+    xsm: "text-12",
+    sm: "text-16/8",
+    md: "text-20",
+    lg: "text-32/8 uppercase",
+    xl: "text-40/10 uppercase"
+}
+---
+
+<p class:list={[baseStyle, variantStyle[variant], className]} {...rest}><slot /></p>
