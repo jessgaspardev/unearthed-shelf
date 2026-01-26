@@ -1,15 +1,49 @@
 ---
 interface Props {
 	pageTitle?: string;
+	description?: string;
+  	canonicalUrl?: string;
+  	ogImage?: string;
 }
 
-const { pageTitle } = Astro.props;
+const { pageTitle,
+		description = "Explore this curated directory of classic science fiction books from golden age masters to forgotten gems and underrated masterpieces of sci-fi literature.",
+  		canonicalUrl = Astro.url.pathname,
+  		ogImage = "/og-image.png"
+ } = Astro.props;
+
+const siteUrl = Astro.site || 'https://unearthedshelf.com';
+const fullCanonicalUrl = new URL(canonicalUrl, siteUrl).href;
 ---
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="description" content={description} />
 	<meta name="generator" content={Astro.generator} />
-	<title>Unearthed Shelf - Classic Sci-Fi Books</title>
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="canonical" href={fullCanonicalUrl} />
+	<link rel="sitemap" href="/sitemap-index.xml" />
+	<meta name="robots" content="index, follow" />
+  	<meta name="language" content="English" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={fullCanonicalUrl} />
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content={new URL(ogImage, siteUrl).href} />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content={fullCanonicalUrl} />
+	<meta property="twitter:title" content={pageTitle} />
+	<meta property="twitter:description" content={description} />
+	<meta property="twitter:image" content={new URL(ogImage, siteUrl).href} />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	
+	<title>Unearthed Shelf - Classic Sci-Fi Books - {pageTitle}</title>
 </head>
