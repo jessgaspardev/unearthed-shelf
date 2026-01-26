@@ -11,6 +11,7 @@ const { image, title, href } = Astro.props;
         src={image} 
         alt=""
         class="w-full h-full object-cover"
+        densities={[1,1.5]}
         />
       <div class="absolute inset-0 bg-[radial-gradient(at_30%_30%,transparent_0%,#1E1E1E_100%)] transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
     </div>

@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+
 interface Props {
 	pageTitle?: string;
 	description?: string;
@@ -45,5 +47,6 @@ const fullCanonicalUrl = new URL(canonicalUrl, siteUrl).href;
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	
-	<title>Classic Sci-Fi Books - {pageTitle}</title>
+	<title>Classic Sci-Fi Books {pageTitle}</title>
+	<ClientRouter />
 </head>
