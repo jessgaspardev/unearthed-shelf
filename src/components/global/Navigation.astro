@@ -17,7 +17,7 @@ const navigation = [
     <!-- Desktop Nav -->
     <ul class="hidden md:flex gap-8">
         {
-            navigation.map((link, index) => (
+            navigation.map((link) => (
                 <li>
                     <Link href={link.href} variant={'nav'}>{link.title}</Link>
                 </li>

@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+
 // components
+import Head from "../components/global/Head.astro";
+import Breadcrumbs from "../components/elements/Breadcrumbs.astro";
 import Categories from "../components/elements/Categories.astro";
 import Heading from "../components/elements/Heading.astro";
 import Text from "../components/elements/Text.astro";
@@ -23,15 +26,30 @@ export const getStaticPaths = ( async () => {
             book
         }
     }))
+    
 }) satisfies GetStaticPaths;
 
 // props
 const { book } = Astro.props;
 const { title, author, genre, year, rating, description, cover, goodreads, bookshop } = book.data
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: genre, href: `/${genre.toLowerCase().replace(/\s+/g, '-')}` },
+  { label: title } // Current page - no href
+];
+
 ---
+
+<Head 
+  pageTitle={title}
+  description={`${title} by ${author} (${year}) - ${description.substring(0, 155)}...`}
+  ogImage={cover.src}
+/>
 
 <Layout>
     <Categories />
+    <Breadcrumbs items={breadcrumbItems} />
     <section class="flex md:flex-row flex-col gap-8 p-8">
         <div class="lg:flex-2 flex-1 flex flex-col gap-4">
             <Heading tagName="h1" tagSize="h3">{title}</Heading>
@@ -55,6 +73,25 @@ const { title, author, genre, year, rating, description, cover, goodreads, books
                 class="w-full h-full object-cover"
             ></Image>
         </div>
-        
     </section>
 </Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": title,
+  "author": {
+    "@type": "Person",
+    "name": author
+  },
+  "datePublished": year,
+  "genre": genre,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": rating,
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "image": new URL(cover.src, Astro.site).href,
+  "url": Astro.url.href
+})} />

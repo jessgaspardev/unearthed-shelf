@@ -15,7 +15,7 @@ const filteredBooks = genre ? books.filter(book => book.data.genre === genre) : 
 <section class="flex flex-wrap justify-center gap-8 p-8">
     {
         filteredBooks.map((book) => (
-            <Book image={book.data.cover} href={book.data.slug} title={book.data.title} />
+            <Book image={book.data.cover} href={book.data.slug} title={book.data.title} author={book.data.author} />
         ))
     }
 </section>
