@@ -76,22 +76,3 @@ const breadcrumbItems = [
     </section>
 </Layout>
 
-<script type="application/ld+json" set:html={JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "name": title,
-  "author": {
-    "@type": "Person",
-    "name": author
-  },
-  "datePublished": year,
-  "genre": genre,
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": rating,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "image": new URL(cover.src, Astro.site).href,
-  "url": Astro.url.href
-})} />
