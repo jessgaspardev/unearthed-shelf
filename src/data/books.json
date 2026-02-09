@@ -388,5 +388,31 @@
         "goodreads": "https://www.goodreads.com/book/show/16967.1632",
         "bookshop": "https://www.google.com",
         "cover": "./covers/30.jpg"
+    },
+    {
+        "id": "31",
+        "slug": "the-stand",
+        "title": "The Stand",
+        "author": "Stephen King",
+        "rating": "4.34",
+        "genre": "Apocalyptic",
+        "description": "This is the way the world ends: with a nanosecond of computer error in a Defense Department laboratory and a million casual contacts that form the links in a chain letter of death. And here is the bleak new world of the day after: a world stripped of its institutions and emptied of 99 percent of its people. A world in which a handful of panicky survivors choose sides -- or are chosen.",
+        "year": "1978",
+        "goodreads": "https://www.goodreads.com/book/show/149267.The_Stand",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/31.png"
+    },
+    {
+        "id": "32",
+        "slug": "oryx-and-crake",
+        "title": "Oryx and Crake",
+        "author": "Margaret Atwood",
+        "rating": "4.01",
+        "genre": "Apocalyptic",
+        "description": "Oryx and Crake is at once an unforgettable love story and a compelling vision of the future. Snowman, known as Jimmy before mankind was overwhelmed by a plague, is struggling to survive in a world where he may be the last human, and mourning the loss of his best friend, Crake, and the beautiful and elusive Oryx whom they both loved. In search of answers, Snowman embarks on a journey–with the help of the green-eyed Children of Crake–through the lush wilderness that was so recently a great city, until powerful corporations took mankind on an uncontrolled genetic engineering ride. Margaret Atwood projects us into a near future that is both all too familiar and beyond our imagining.",
+        "year": "2003",
+        "goodreads": "https://www.goodreads.com/book/show/46756.Oryx_and_Crake",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/32.jpg"
     }
 ]
