@@ -10,6 +10,7 @@ const { image, title, href, author } = Astro.props;
       <Image 
         src={image} 
         alt={`${title} by ${author} book cover`}
+        width={260}
         class="w-full h-full object-cover"
         densities={[1,1.5]}
         loading="lazy"
