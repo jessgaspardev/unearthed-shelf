@@ -391,16 +391,16 @@
     },
     {
         "id": "31",
-        "slug": "the-stand",
-        "title": "The Stand",
-        "author": "Stephen King",
-        "rating": "4.34",
-        "genre": "Apocalyptic",
-        "description": "This is the way the world ends: with a nanosecond of computer error in a Defense Department laboratory and a million casual contacts that form the links in a chain letter of death. And here is the bleak new world of the day after: a world stripped of its institutions and emptied of 99 percent of its people. A world in which a handful of panicky survivors choose sides -- or are chosen.",
+        "slug": "snow-crash",
+        "title": "Snow Crash",
+        "author": "Neal Stephenson",
+        "rating": "4.02",
+        "genre": "Cyberpunk",
+        "description": "In reality, Hiro Protagonist delivers pizza for Uncle Enzo's CosoNostra Pizza Inc., but in the Metaverse he's a warrior prince. Plunging headlong into the enigma of a new computer virus that's striking down hackers everywhere, he races along the neon-lit streets on a search-and-destroy mission for the shadowy virtual villain threatening to bring about infocalypse. Snow Crash is a mind-altering romp through a future America so bizarre, so outrageous… you'll recognize it immediately.",
         "year": "1978",
-        "goodreads": "https://www.goodreads.com/book/show/149267.The_Stand",
+        "goodreads": "https://www.goodreads.com/book/show/40651883-snow-crash",
         "bookshop": "https://www.google.com",
-        "cover": "./covers/31.png"
+        "cover": "./covers/31.jpg"
     },
     {
         "id": "32",
@@ -414,5 +414,57 @@
         "goodreads": "https://www.goodreads.com/book/show/46756.Oryx_and_Crake",
         "bookshop": "https://www.google.com",
         "cover": "./covers/32.jpg"
+    },
+    {
+        "id": "33",
+        "slug": "count-zero",
+        "title": "Count Zero",
+        "author": "William Gibson",
+        "rating": "4.01",
+        "genre": "Cyberpunk",
+        "description": "A corporate mercenary wakes in a reconstructed body, a beautiful woman by his side. Then Hosaka Corporation reactivates him, for a mission more dangerous than the one he’s recovering from: to get a defecting chief of R&D—and the biochip he’s perfected—out intact. But this proves to be of supreme interest to certain other parties—some of whom aren’t remotely human...",
+        "year": "1986",
+        "goodreads": "https://www.goodreads.com/book/show/22200.Count_Zero",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/33.jpg"
+    },
+    {
+        "id": "34",
+        "slug": "altered-carbon",
+        "title": "Altered Carbon",
+        "author": "Richard K. Morgan",
+        "rating": "4.05",
+        "genre": "Cyberpunk",
+        "description": "Four hundred years from now mankind is strung out across a region of interstellar space inherited from an ancient civilization discovered on Mars. The colonies are linked together by the occasional sublight colony ship voyages and hyperspatial data-casting. Human consciousness is digitally freighted between the stars and downloaded into bodies as a matter of course.But some things never change. So when ex-envoy, now-convict Takeshi Kovacs has his consciousness and skills downloaded into the body of a nicotine-addicted ex-thug and presented with a catch-22 offer, he really shouldn't be surprised. Contracted by a billionaire to discover who murdered his last body, Kovacs is drawn into a terrifying conspiracy that stretches across known space and to the very top of society.",
+        "year": "2002",
+        "goodreads": "https://www.goodreads.com/book/show/40792913-altered-carbon",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/34.jpg"
+    },
+    {
+        "id": "35",
+        "slug": "mona-lisa-overdrive",
+        "title": "Mona Lisa Overdrive",
+        "author": "William Gibson",
+        "rating": "3.99",
+        "genre": "Cyberpunk",
+        "description": "William Gibson, author of the extraordinary multiaward-winning novel Neuromancer, has written his most brilliant and thrilling work to date... The Mona Lisa Overdrive. Enter Gibson's unique world - lyric and mechanical, erotic and violent, sobering and exciting - where multinational corporations and high tech outlaws vie for power, traveling into the computer-generated universe known as cyberspace. Into this world comes Mona, a young girl with a murky past and an uncertain future whose life is on a collision course with internationally famous Sense/Net star Angie Mitchell. Since childhood, Angie has been able to tap into cyberspace without a computer. Now, from inside cyberspace, a kidnapping plot is masterminded by a phantom entity who has plans for Mona, Angie, and all humanity, plans that cannot be controlled... or even known. And behind the intrigue lurks the shadowy Yakuza, the powerful Japanese underworld, whose leaders ruthlessly manipulate people and events to suit their own purposes... or so they think.",
+        "year": "1988",
+        "goodreads": "https://www.goodreads.com/book/show/154091.Mona_Lisa_Overdrive",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/35.jpg"
+    },
+    {
+        "id": "36",
+        "slug": "do-androids-dream-of-electric-sheep",
+        "title": "Do Androids Dream of Electric Sheep",
+        "author": "Philip K. Dick",
+        "rating": "4.08",
+        "genre": "Cyberpunk",
+        "description": "It was January 2021, and Rick Deckard had a license to kill.Somewhere among the hordes of humans out there, lurked several rogue androids. Deckard's assignment--find them and then...'retire' them. Trouble was, the androids all looked exactly like humans, and they didn't want to be found!",
+        "year": "1968",
+        "goodreads": "https://www.goodreads.com/book/show/36402034-do-androids-dream-of-electric-sheep",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/36.jpg"
     }
 ]
