@@ -1,22 +1,65 @@
 ---
+// assets
 import { Image } from "astro:assets";
+
+// components
 import Text from "./Text.astro";
-const { image, title, href, author } = Astro.props;
+import Link from "./Link.astro";
+
+// props
+const { image, title, author, description, year, rating, goodreads, bookshop } = Astro.props;
+
+const TRUNCATE_LENGTH = 250;
+const isTruncatable = description.length > TRUNCATE_LENGTH;
+const truncated = isTruncatable
+  ? description.slice(0, TRUNCATE_LENGTH).trimEnd() + "…"
+  : description;
 ---
 
-<div class="relative group w-60">
-  <a href=`/${href}` class="flex flex-col gap-4">
-    <div class="relative overflow-hidden w-60 h-90">
-      <Image 
-        src={image} 
-        alt={`${title} by ${author} book cover`}
-        width={260}
-        class="w-full h-full object-cover"
-        densities={[1,1.5]}
-        loading="lazy"
-        />
-      <div class="absolute inset-0 bg-[radial-gradient(at_30%_30%,transparent_0%,#1E1E1E_100%)] transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+<div class="w-full flex md:flex-row flex-col gap-4">
+    <Image
+      src={image}
+      alt={`${title} by ${author} book cover`}
+      width={260}
+      class="object-cover h-100"
+      densities={[1, 1.5]}
+      loading="lazy"
+    />
+  <div class="flex flex-col gap-2 flex-3 items-start">
+    <div>
+      <Text variant={"xl"}>{title}</Text>
+      <Text variant={"sm"}>Author: <span class="text-primary">{author}</span></Text>
+      <Text variant={"sm"}>Year: <span class="text-primary">{year}</span></Text> 
+      <Text variant={"sm"}>Rating: <span class="text-primary">{rating}</span></Text> 
     </div>
-    <Text variant={'md'} class="group-hover:text-accent">{title}</Text>
-  </a>
+    
+    <Text variant={"sm"}>
+      <span class="description-text">{truncated}</span>
+      {
+        isTruncatable && (
+          <button
+            class="description-toggle ml-1 text-sm underline underline-offset-2 text-primary hover:text-accent cursor-pointer"
+            data-truncated={truncated}
+            data-full={description}
+          >
+            Read more
+          </button>
+        )
+      }
+    </Text>
+    <Link variant={'buttonSecondary'} href={goodreads} newWindow class="mt-4">Goodreads</Link>
+  </div>
 </div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>(".description-toggle").forEach((btn) => {
+    let expanded = false;
+    const textEl = btn.previousElementSibling as HTMLElement;
+
+    btn.addEventListener("click", () => {
+      expanded = !expanded;
+      textEl.textContent = expanded ? btn.dataset.full! : btn.dataset.truncated!;
+      btn.textContent = expanded ? "Read less" : "Read more";
+    });
+  });
+</script>

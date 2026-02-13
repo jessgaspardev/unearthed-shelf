@@ -26,9 +26,8 @@
     --text-12: 0.75rem;
 
     /* BREAKPOINTS */
-    --breakpoint-xsm: 320px;
-    --breakpoint-sm: 730px;
-    --breakpoint-md: 988px;
-    --breakpoint-lg: 1364px;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1200px;
     --breakpoint-xl: 1440px;
 }

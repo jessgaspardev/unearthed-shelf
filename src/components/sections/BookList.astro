@@ -12,10 +12,18 @@ const books = await getCollection("books");
 const filteredBooks = genre ? books.filter(book => book.data.genre === genre) : books;
 ---
 
-<section class="flex flex-wrap justify-center gap-8 p-8">
+<section class="grid xl:grid-cols-2 justify-center gap-16 lg:p-20 p-6">
     {
         filteredBooks.map((book) => (
-            <Book image={book.data.cover} href={book.data.slug} title={book.data.title} author={book.data.author} />
+            <Book 
+                image={book.data.cover} 
+                title={book.data.title} 
+                author={book.data.author} 
+                year={book.data.year}
+                description={book.data.description}
+                goodreads={book.data.goodreads}
+                rating={book.data.rating}
+            />
         ))
     }
 </section>
