@@ -466,5 +466,57 @@
         "goodreads": "https://www.goodreads.com/book/show/36402034-do-androids-dream-of-electric-sheep",
         "bookshop": "https://www.google.com",
         "cover": "./covers/36.jpg"
+    },
+    {
+        "id": "37",
+        "slug": "fahrenheit-451",
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "rating": "3.99",
+        "genre": "Dystopian",
+        "description": "Guy Montag is a fireman. In his world, where television rules and literature is on the brink of extinction, firemen start fires rather than put them out. His job is to destroy the most illegal of commodities, the printed book, along with the houses in which they are hidden.Montag never questions the destruction and ruin his actions produce, returning each day to his bland life and wife, Mildred, who spends all day with her television 'family'. But then he meets an eccentric young neighbor, Clarisse, who introduces him to a past where people did not live in fear and to a present where one sees the world through the ideas in books instead of the mindless chatter of television.When Mildred attempts suicide and Clarisse suddenly disappears, Montag begins to question everything he has ever known.",
+        "year": "1953",
+        "goodreads": "https://www.goodreads.com/book/show/13079982-fahrenheit-451",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/37.webp"
+    },
+    {
+        "id": "38",
+        "slug": "the-giver",
+        "title": "The Giver",
+        "author": "Lois Lowry",
+        "rating": "4.13",
+        "genre": "Dystopian",
+        "description": "The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community.",
+        "year": "1993",
+        "goodreads": "https://www.goodreads.com/book/show/3636.The_Giver",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/38.jpg"
+    },
+    {
+        "id": "39",
+        "slug": "animal-farm",
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "rating": "4.13",
+        "genre": "Dystopian",
+        "description": "A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned –a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible. When Animal Farm was first published, Stalinist Russia was seen as its target. Today it is devastatingly clear that wherever and whenever freedom is attacked, under whatever banner, the cutting clarity and savage comedy of George Orwell’s masterpiece have a meaning and message still ferociously fresh.",
+        "year": "1945",
+        "goodreads": "https://www.goodreads.com/book/show/170448.Animal_Farm",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/39.jpg"
+    },
+    {
+        "id": "40",
+        "slug": "uglies",
+        "title": "Uglies",
+        "author": "Scott Westerfeld",
+        "rating": "3.85",
+        "genre": "Dystopian",
+        "description": "Tally is about to turn sixteen, and she can't wait. In just a few weeks she'll have the operation that will turn her from a repellent ugly into a stunning pretty. And as a pretty, she'll be catapulted into a high-tech paradise where her only job is to have fun.But Tally's new friend Shay isn't sure she wants to become a pretty. When Shay runs away, Tally learns about a whole new side of the pretty world—and it isn't very pretty. The authorities offer Tally a choice: find her friend and turn her in, or never turn pretty at all. Tally's choice will change her world forever....",
+        "year": "2005",
+        "goodreads": "https://www.goodreads.com/book/show/24770.Uglies",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/40.jpg"
     }
 ]
