@@ -1,0 +1,44 @@
+---
+// layout
+import Layout from '../layouts/Layout.astro';
+
+// components
+import Categories from '../components/elements/Categories.astro';
+import BookList from '../components/sections/BookList.astro';
+
+// types
+import type { Genre } from '../types/genres';
+
+// routing
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (() => {
+  const categories: { slug: string; title: Genre }[] = [
+    { slug: 'aliens', title: 'Aliens' },
+    { slug: 'alternate-history', title: 'Alternate History' },
+    { slug: 'apocalyptic', title: 'Apocalyptic' },
+    { slug: 'cyberpunk', title: 'Cyberpunk' },
+    { slug: 'dystopian', title: 'Dystopian' },
+    { slug: 'hard-sci-fi', title: 'Hard Sci-Fi' },
+    { slug: 'military', title: 'Military' },
+    { slug: 'robots', title: 'Robots' },
+    { slug: 'space-opera', title: 'Space Opera' },
+    { slug: 'steampunk', title: 'Steampunk' },
+    { slug: 'time-travel', title: 'Time Travel' }
+  ];
+
+  return categories.map(cat => ({
+    params: { category: cat.slug },
+    props: { genre: cat.title }
+  }));
+}) satisfies GetStaticPaths;
+
+// props
+const { genre } = Astro.props as { genre: Genre };
+
+---
+
+<Layout title={`${genre}`}>
+  <Categories genre={genre}/>
+  <BookList genre={genre} />
+</Layout>

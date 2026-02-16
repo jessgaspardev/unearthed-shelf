@@ -1,8 +1,12 @@
 ---
+// components
 import Book from "../elements/Book.astro";
 
+// types
+import type { Genre } from '../../types/genres';
+
 interface Props {
-  genre?: "Aliens" | "Alternate History" | "Apocalyptic" | "Cyberpunk" | "Dystopian" | "Hard Sci-Fi" | "Military" | "Robots" | "Space Opera" | "Steampunk" | "Time Travel";
+  genre?: Genre;
 }
 
 const { genre } = Astro.props;
