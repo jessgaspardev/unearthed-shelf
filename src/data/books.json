@@ -518,5 +518,57 @@
         "goodreads": "https://www.goodreads.com/book/show/24770.Uglies",
         "bookshop": "https://www.google.com",
         "cover": "./covers/40.jpg"
+    },
+    {
+        "id": "41",
+        "slug": "revelation-space",
+        "title": "Revelation Space",
+        "author": "Alastair Reynolds",
+        "rating": "3.98",
+        "genre": "Hard Sci-Fi",
+        "description": "Nine hundred thousand years ago, something annihilated the Amarantin civilization just as it was on the verge of discovering space flight. Now one scientist, Dan Sylveste, will stop at nothing to solve the Amarantin riddle before ancient history repeats itself. With no other resources at his disposal, Sylveste forges a dangerous alliance with the cyborg crew of the starship Nostalgia for Infinity. But as he closes in on the secret, a killer closes in on him. Because the Amarantin were destroyed for a reason — and if that reason is uncovered, the universe—and reality itself — could be irrecoverably altered…",
+        "year": "2000",
+        "goodreads": "https://www.goodreads.com/book/show/89187.Revelation_Space",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/41.jpg"
+    },
+    {
+        "id": "42",
+        "slug": "2001-a-space-odyssey",
+        "title": "2001: A Space Odyssey",
+        "author": "Arthur C. Clarke",
+        "rating": "4.15",
+        "genre": "Hard Sci-Fi",
+        "description": "On the Moon, an enigma is uncovered.So great are the implications of this discovery that for the first time men are sent out deep into our solar system.But long before their destination is reached, things begin to go horribly, inexplicably wrong...One of the greatest-selling science fiction novels of our time, this classic book will grip you to the very end.",
+        "year": "1968",
+        "goodreads": "https://www.goodreads.com/book/show/70535.2001",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/42.jpg"
+    },
+    {
+        "id": "43",
+        "slug": "ringworld",
+        "title": "Ringworld",
+        "author": "Larry Niven",
+        "rating": "3.96",
+        "genre": "Hard Sci-Fi",
+        "description": "The artefact is a circular ribbon of matter six hundred million miles long and ninety million miles in radius. Pierson's puppeteers, the aliens who discovered it, are understandably wary of encountering the builders of such an immense structure and have assembled a team of two humans, a mad puppeteer and a kzin, a huge cat-like alien, to explore it. But a crash landing on the vast edifice forces the crew on a desperate and dangerous trek across the Ringworld.",
+        "year": "1970",
+        "goodreads": "https://www.goodreads.com/book/show/70535.2001",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/43.jpg"
+    },
+    {
+        "id": "44",
+        "slug": "foundation",
+        "title": "Foundation",
+        "author": "Isaac Asimov",
+        "rating": "4.17",
+        "genre": "Hard Sci-Fi",
+        "description": "For twelve thousand years the Galactic Empire has ruled supreme. Now it is dying. But only Hari Seldon, creator of the revolutionary science of psychohistory, can see into the future -- to a dark age of ignorance, barbarism, and warfare that will last thirty thousand years. To preserve knowledge and save mankind, Seldon gathers the best minds in the Empire -- both scientists and scholars -- and brings them to a bleak planet at the edge of the Galaxy to serve as a beacon of hope for a future generations. He calls his sanctuary the Foundation.But soon the fledgling Foundation finds itself at the mercy of corrupt warlords rising in the wake of the receding Empire. Mankind's last best hope is faced with an agonizing choice: submit to the barbarians and be overrun -- or fight them and be destroyed.",
+        "year": "1951",
+        "goodreads": "https://www.goodreads.com/book/show/29579.Foundation",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/44.jpg"
     }
 ]
