@@ -570,5 +570,31 @@
         "goodreads": "https://www.goodreads.com/book/show/29579.Foundation",
         "bookshop": "https://www.google.com",
         "cover": "./covers/44.jpg"
+    },
+    {
+        "id": "45",
+        "slug": "dauntless",
+        "title": "Dauntless",
+        "author": "Jack Campbell",
+        "rating": "3.96",
+        "genre": "Military",
+        "description": "The Alliance has been fighting the Syndics for a century--and losing badly. Now its fleet is crippled and stranded in enemy territory. Their only hope is a man who's emerged from a century-long hibernation to find he has been heroically idealized, beyond belief...Captain John 'Black Jack' Geary's legendary exploits are known to every schoolchild. Revered for his heroic 'last stand' in the early days of the war, he was presumed dead. But a century later, Geary miraculously returns from survival hibernation and reluctantly takes command of the Alliance fleet as it faces annihilation by the Syndics.Appalled by the hero-worship around him, Geary is nevertheless a man who will do his duty. And he knows that bringing the stolen Syndic hypernet key safely home is the Alliance's one chance to win the war. But to do that, Geary will have to live up to the impossibly heroic 'Black Jack' legend...",
+        "year": "2006",
+        "goodreads": "https://www.goodreads.com/book/show/112292.Dauntless",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/45.jpg"
+    },
+    {
+        "id": "47",
+        "slug": "the-forever-war",
+        "title": "The Forever War",
+        "author": "Joe Haldeman",
+        "rating": "4.14",
+        "genre": "Military",
+        "description": "The Earth's leaders have drawn a line in the interstellar sand—despite the fact that the fierce alien enemy that they would oppose is inscrutable, unconquerable, and very far away. A reluctant conscript drafted into an elite Military unit, Private William Mandella has been propelled through space and time to fight in the distant thousand-year conflict; to perform his duties without rancor and even rise up through military ranks. Pvt. Mandella is willing to do whatever it takes to survive the ordeal and return home. But 'home' may be even more terrifying than battle, because, thanks to the time dilation caused by space travel, Mandella is aging months while the Earth he left behind is aging centuries.",
+        "year": "1974",
+        "goodreads": "https://www.goodreads.com/book/show/21611.The_Forever_War",
+        "bookshop": "https://www.google.com",
+        "cover": "./covers/46.webp"
     }
 ]
