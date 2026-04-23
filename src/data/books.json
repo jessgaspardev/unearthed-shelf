@@ -10,7 +10,7 @@
         "year": "1898",
         "goodreads": "https://www.goodreads.com/book/show/8909.The_War_of_the_Worlds",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/1.avif"
+        "cover": "../assets/covers/1.avif"
     },
     {
         "id": "2",
@@ -23,7 +23,7 @@
         "year": "1912",
         "goodreads": "https://www.goodreads.com/book/show/40395.A_Princess_of_Mars",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/2.jpg"
+        "cover": "../assets/covers/2.jpg"
     },
     {
         "id": "3",
@@ -36,7 +36,7 @@
         "year": "1962",
         "goodreads": "https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/3.jpg"
+        "cover": "../assets/covers/3.jpg"
     },
     {
         "id": "4",
@@ -49,7 +49,7 @@
         "year": "2006",
         "goodreads": "https://www.goodreads.com/book/show/28876.His_Majesty_s_Dragon",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/4.jpg"
+        "cover": "../assets/covers/4.jpg"
     },
     {
         "id": "5",
@@ -62,7 +62,7 @@
         "year": "2006",
         "goodreads": "https://www.goodreads.com/book/show/6288.The_Road",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/5.jpg"
+        "cover": "../assets/covers/5.jpg"
     },
     {
         "id": "6",
@@ -75,7 +75,7 @@
         "year": "1978",
         "goodreads": "https://www.goodreads.com/book/show/149267.The_Stand",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/6.png"
+        "cover": "../assets/covers/6.png"
     },
     {
         "id": "7",
@@ -88,7 +88,7 @@
         "year": "1984",
         "goodreads": "https://www.goodreads.com/book/show/6088007-neuromancer",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/7.jpg"
+        "cover": "../assets/covers/7.jpg"
     },
     {
         "id": "8",
@@ -101,7 +101,7 @@
         "year": "1949",
         "goodreads": "https://www.goodreads.com/book/show/40961427-1984",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/8.webp"
+        "cover": "../assets/covers/8.webp"
     },
     {
         "id": "9",
@@ -114,7 +114,7 @@
         "year": "1985",
         "goodreads": "https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/9.jpg"
+        "cover": "../assets/covers/9.jpg"
     },
     {
         "id": "10",
@@ -127,7 +127,7 @@
         "year": "1932",
         "goodreads": "https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/10.jpg"
+        "cover": "../assets/covers/10.jpg"
     },
     {
         "id": "11",
@@ -140,7 +140,7 @@
         "year": "1992",
         "goodreads": "https://www.goodreads.com/book/show/77507.Red_Mars",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/11.jpg"
+        "cover": "../assets/covers/11.jpg"
     },
     {
         "id": "12",
@@ -153,7 +153,7 @@
         "year": "1973",
         "goodreads": "https://www.goodreads.com/book/show/112537.Rendezvous_with_Rama",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/12.jpg"
+        "cover": "../assets/covers/12.jpg"
     },
     {
         "id": "13",
@@ -166,7 +166,7 @@
         "year": "2005",
         "goodreads": "https://www.goodreads.com/book/show/36510196-old-man-s-war",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/13.avif"
+        "cover": "../assets/covers/13.avif"
     },
     {
         "id": "14",
@@ -179,7 +179,7 @@
         "year": "1992",
         "goodreads": "https://www.goodreads.com/book/show/35921.On_Basilisk_Station",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/14.jpg"
+        "cover": "../assets/covers/14.jpg"
     },
     {
         "id": "15",
@@ -192,7 +192,7 @@
         "year": "1950",
         "goodreads": "https://www.goodreads.com/book/show/41804.I_Robot",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/15.jpg"
+        "cover": "../assets/covers/15.jpg"
     },
     {
         "id": "16",
@@ -205,7 +205,7 @@
         "year": "1954",
         "goodreads": "https://www.goodreads.com/book/show/41811.The_Caves_of_Steel",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/16.jpg"
+        "cover": "../assets/covers/16.jpg"
     },
     {
         "id": "17",
@@ -218,7 +218,7 @@
         "year": "1965",
         "goodreads": "https://www.goodreads.com/book/show/44767458-dune",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/17.jpg"
+        "cover": "../assets/covers/17.jpg"
     },
     {
         "id": "18",
@@ -231,7 +231,7 @@
         "year": "1987",
         "goodreads": "https://www.goodreads.com/book/show/8935689-consider-phlebas",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/18.jpg"
+        "cover": "../assets/covers/18.jpg"
     },
     {
         "id": "19",
@@ -244,7 +244,7 @@
         "year": "2001",
         "goodreads": "https://www.goodreads.com/book/show/287861.Mortal_Engines",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/19.jpg"
+        "cover": "../assets/covers/19.jpg"
     },
     {
         "id": "20",
@@ -257,7 +257,7 @@
         "year": "2000",
         "goodreads": "https://www.goodreads.com/book/show/68494.Perdido_Street_Station",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/20.jpg"
+        "cover": "../assets/covers/20.jpg"
     },
     {
         "id": "21",
@@ -270,7 +270,7 @@
         "year": "1991",
         "goodreads": "https://www.goodreads.com/book/show/10964.Outlander",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/21.jpg"
+        "cover": "../assets/covers/21.jpg"
     },
     {
         "id": "22",
@@ -283,7 +283,7 @@
         "year": "2003",
         "goodreads": "https://www.goodreads.com/book/show/18619684-the-time-traveler-s-wife",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/22.jpg"
+        "cover": "../assets/covers/22.jpg"
     },
     {
         "id": "23",
@@ -296,7 +296,7 @@
         "year": "1985",
         "goodreads": "https://www.goodreads.com/book/show/375802.Ender_s_Game",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/23.avif"
+        "cover": "../assets/covers/23.avif"
     },
     {
         "id": "24",
@@ -309,7 +309,7 @@
         "year": "1979",
         "goodreads": "https://www.goodreads.com/book/show/386162.The_Hitchhiker_s_Guide_to_the_Galaxy",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/24.jpg"
+        "cover": "../assets/covers/24.jpg"
     },
     {
         "id": "25",
@@ -322,7 +322,7 @@
         "year": "2005",
         "goodreads": "https://www.goodreads.com/book/show/476492.Awaken_Me_Darkly",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/25.jpg"
+        "cover": "../assets/covers/25.jpg"
     },
     {
         "id": "26",
@@ -335,7 +335,7 @@
         "year": "2004",
         "goodreads": "https://www.goodreads.com/book/show/14201.Jonathan_Strange_Mr_Norrell",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/26.jpg"
+        "cover": "../assets/covers/26.jpg"
     },
     {
         "id": "27",
@@ -348,7 +348,7 @@
         "year": "1991",
         "goodreads": "https://www.goodreads.com/book/show/56842.Fatherland",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/27.jpg"
+        "cover": "../assets/covers/27.jpg"
     },
     {
         "id": "28",
@@ -361,7 +361,7 @@
         "year": "2006",
         "goodreads": "https://www.goodreads.com/book/show/14069.Throne_of_Jade",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/28.jpg"
+        "cover": "../assets/covers/28.jpg"
     },
     {
         "id": "29",
@@ -374,7 +374,7 @@
         "year": "2002",
         "goodreads": "https://www.goodreads.com/book/show/2723.The_Years_of_Rice_and_Salt",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/29.jpg"
+        "cover": "../assets/covers/29.jpg"
     },
     {
         "id": "30",
@@ -387,7 +387,7 @@
         "year": "2000",
         "goodreads": "https://www.goodreads.com/book/show/16967.1632",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/30.jpg"
+        "cover": "../assets/covers/30.jpg"
     },
     {
         "id": "31",
@@ -400,7 +400,7 @@
         "year": "1978",
         "goodreads": "https://www.goodreads.com/book/show/40651883-snow-crash",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/31.jpg"
+        "cover": "../assets/covers/31.jpg"
     },
     {
         "id": "32",
@@ -413,7 +413,7 @@
         "year": "2003",
         "goodreads": "https://www.goodreads.com/book/show/46756.Oryx_and_Crake",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/32.jpg"
+        "cover": "../assets/covers/32.jpg"
     },
     {
         "id": "33",
@@ -426,7 +426,7 @@
         "year": "1986",
         "goodreads": "https://www.goodreads.com/book/show/22200.Count_Zero",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/33.jpg"
+        "cover": "../assets/covers/33.jpg"
     },
     {
         "id": "34",
@@ -439,7 +439,7 @@
         "year": "2002",
         "goodreads": "https://www.goodreads.com/book/show/40792913-altered-carbon",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/34.jpg"
+        "cover": "../assets/covers/34.jpg"
     },
     {
         "id": "35",
@@ -452,7 +452,7 @@
         "year": "1988",
         "goodreads": "https://www.goodreads.com/book/show/154091.Mona_Lisa_Overdrive",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/35.jpg"
+        "cover": "../assets/covers/35.jpg"
     },
     {
         "id": "36",
@@ -465,7 +465,7 @@
         "year": "1968",
         "goodreads": "https://www.goodreads.com/book/show/36402034-do-androids-dream-of-electric-sheep",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/36.jpg"
+        "cover": "../assets/covers/36.jpg"
     },
     {
         "id": "37",
@@ -478,7 +478,7 @@
         "year": "1953",
         "goodreads": "https://www.goodreads.com/book/show/13079982-fahrenheit-451",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/37.webp"
+        "cover": "../assets/covers/37.webp"
     },
     {
         "id": "38",
@@ -491,7 +491,7 @@
         "year": "1993",
         "goodreads": "https://www.goodreads.com/book/show/3636.The_Giver",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/38.jpg"
+        "cover": "../assets/covers/38.jpg"
     },
     {
         "id": "39",
@@ -504,7 +504,7 @@
         "year": "1945",
         "goodreads": "https://www.goodreads.com/book/show/170448.Animal_Farm",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/39.jpg"
+        "cover": "../assets/covers/39.jpg"
     },
     {
         "id": "40",
@@ -517,7 +517,7 @@
         "year": "2005",
         "goodreads": "https://www.goodreads.com/book/show/24770.Uglies",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/40.jpg"
+        "cover": "../assets/covers/40.jpg"
     },
     {
         "id": "41",
@@ -530,7 +530,7 @@
         "year": "2000",
         "goodreads": "https://www.goodreads.com/book/show/89187.Revelation_Space",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/41.jpg"
+        "cover": "../assets/covers/41.jpg"
     },
     {
         "id": "42",
@@ -543,7 +543,7 @@
         "year": "1968",
         "goodreads": "https://www.goodreads.com/book/show/70535.2001",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/42.jpg"
+        "cover": "../assets/covers/42.jpg"
     },
     {
         "id": "43",
@@ -556,7 +556,7 @@
         "year": "1970",
         "goodreads": "https://www.goodreads.com/book/show/70535.2001",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/43.jpg"
+        "cover": "../assets/covers/43.jpg"
     },
     {
         "id": "44",
@@ -569,7 +569,7 @@
         "year": "1951",
         "goodreads": "https://www.goodreads.com/book/show/29579.Foundation",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/44.jpg"
+        "cover": "../assets/covers/44.jpg"
     },
     {
         "id": "45",
@@ -582,7 +582,7 @@
         "year": "2006",
         "goodreads": "https://www.goodreads.com/book/show/112292.Dauntless",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/45.jpg"
+        "cover": "../assets/covers/45.jpg"
     },
     {
         "id": "47",
@@ -595,6 +595,6 @@
         "year": "1974",
         "goodreads": "https://www.goodreads.com/book/show/21611.The_Forever_War",
         "bookshop": "https://www.google.com",
-        "cover": "../../assets/covers/46.webp"
+        "cover": "../assets/covers/46.webp"
     }
 ]
