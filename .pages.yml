@@ -1,0 +1,38 @@
+media:
+  - name: assets
+    label: Assets
+    input: src/assets
+    output: ../../assets
+content:
+  - name: books
+    label: Books
+    type: file
+    path: src/data/books.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: ID, type: string }
+      - { name: slug, label: Slug, type: string }
+      - { name: author, label: Author, type: string }
+      - { name: cover, label: Cover, type: image }
+      - { name: year, label: Year, type: string }
+      - name: genre
+        label: Genre
+        type: select
+        options:
+          values:
+            - Aliens
+            - Alternate History
+            - Apocalyptic
+            - Cyberpunk
+            - Dystopian
+            - Hard Sci-Fi
+            - Military
+            - Robots
+            - Space Opera
+            - Steampunk
+            - Time Travel
+      - { name: rating, label: Rating, type: string }
+      - { name: description, label: Description, type: text }  
+      - { name: bookshop, label: Bookshop, type: string }
+      - { name: goodreads, label: Good Reads, type: string }          
