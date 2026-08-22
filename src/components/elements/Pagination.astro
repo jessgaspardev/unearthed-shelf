@@ -1,0 +1,83 @@
+---
+import type { Page } from "astro";
+
+interface Props {
+  page: Page<unknown>;
+  basePath?: string;
+}
+
+const { page, basePath = "" } = Astro.props;
+
+const pageUrl = (pageNumber: number) =>
+  pageNumber === 1 ? basePath || "/" : `${basePath}/${pageNumber}`;
+
+// windowed page numbers with ellipses, e.g. 1 … 4 5 [6] 7 8 … 13
+const siblingCount = 1;
+const pageNumbers: (number | "...")[] = [];
+
+for (let i = 1; i <= page.lastPage; i++) {
+  const isEdge = i === 1 || i === page.lastPage;
+  const isSibling = Math.abs(i - page.currentPage) <= siblingCount;
+
+  if (isEdge || isSibling) {
+    pageNumbers.push(i);
+  } else if (pageNumbers[pageNumbers.length - 1] !== "...") {
+    pageNumbers.push("...");
+  }
+}
+---
+
+{
+  page.lastPage > 1 && (
+    <nav
+      class="flex items-center justify-center flex-wrap gap-3 font-mono py-12"
+      aria-label="Pagination"
+    >
+      {page.url.prev ? (
+        <a
+          href={page.url.prev}
+          class="px-4 py-2 rounded-sm text-primary hover:text-accent uppercase"
+        >
+          Prev
+        </a>
+      ) : (
+        <span class="px-4 py-2 rounded-sm text-light/30 uppercase">Prev</span>
+      )}
+
+      <ul class="flex items-center gap-2">
+        {pageNumbers.map((n) => (
+          <li>
+            {n === "..." ? (
+              <span class="px-3 py-2 text-light/50">…</span>
+            ) : n === page.currentPage ? (
+              <span
+                aria-current="page"
+                class="px-3 py-2 rounded-sm bg-primary text-dark"
+              >
+                {n}
+              </span>
+            ) : (
+              <a
+                href={pageUrl(n)}
+                class="px-3 py-2 rounded-sm text-primary hover:text-accent"
+              >
+                {n}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+
+      {page.url.next ? (
+        <a
+          href={page.url.next}
+          class="px-4 py-2 rounded-sm text-primary hover:text-accent uppercase"
+        >
+          Next
+        </a>
+      ) : (
+        <span class="px-4 py-2 rounded-sm text-light/30 uppercase">Next</span>
+      )}
+    </nav>
+  )
+}

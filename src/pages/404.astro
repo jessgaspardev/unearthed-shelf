@@ -5,9 +5,13 @@ import Layout from '../layouts/Layout.astro';
 // components
 import Categories from '../components/elements/Categories.astro';
 import BookList from '../components/sections/BookList.astro';
+
+// data
+import { getCollection } from 'astro:content';
+const books = await getCollection('books');
 ---
 
 <Layout title='- Page Not Found'>
 	<Categories genre="All"/>
-	<BookList />
+	<BookList books={books} />
 </Layout>

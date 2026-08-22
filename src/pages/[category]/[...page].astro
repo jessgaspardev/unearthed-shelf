@@ -1,0 +1,62 @@
+---
+// layout
+import Layout from '../../layouts/Layout.astro';
+
+// components
+import Categories from '../../components/elements/Categories.astro';
+import BookList from '../../components/sections/BookList.astro';
+import Pagination from '../../components/elements/Pagination.astro';
+
+// types
+import type { Genre } from '../../types/genres';
+
+// data
+import { getCollection } from 'astro:content';
+
+// routing
+import type { GetStaticPaths, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const PAGE_SIZE = 10;
+
+  const categories: { slug: string; title: Genre }[] = [
+    { slug: 'aliens', title: 'Aliens' },
+    { slug: 'alternate-history', title: 'Alternate History' },
+    { slug: 'apocalyptic', title: 'Apocalyptic' },
+    { slug: 'cyberpunk', title: 'Cyberpunk' },
+    { slug: 'dystopian', title: 'Dystopian' },
+    { slug: 'hard-sci-fi', title: 'Hard Sci-Fi' },
+    { slug: 'military', title: 'Military' },
+    { slug: 'robots', title: 'Robots' },
+    { slug: 'space-opera', title: 'Space Opera' },
+    { slug: 'steampunk', title: 'Steampunk' },
+    { slug: 'time-travel', title: 'Time Travel' }
+  ];
+
+  const books = await getCollection('books');
+
+  return categories.flatMap((category) => {
+    const filteredBooks = books.filter((book) => book.data.genre === category.title);
+
+    return paginate(filteredBooks, {
+      pageSize: PAGE_SIZE,
+      params: { category: category.slug },
+      props: { genre: category.title }
+    });
+  });
+}) satisfies GetStaticPaths;
+
+// props
+const { page, genre } = Astro.props as {
+  page: Page<CollectionEntry<'books'>>;
+  genre: Genre;
+};
+const { category } = Astro.params;
+---
+
+<Layout title={`${genre}`}>
+  <Categories genre={genre}/>
+  <BookList books={page.data} />
+  <Pagination page={page} basePath={`/${category}`} />
+</Layout>

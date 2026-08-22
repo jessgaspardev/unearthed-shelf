@@ -1,0 +1,30 @@
+---
+// layout
+import Layout from '../layouts/Layout.astro';
+
+// components
+import Categories from '../components/elements/Categories.astro';
+import BookList from '../components/sections/BookList.astro';
+import Pagination from '../components/elements/Pagination.astro';
+
+// data
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+// routing
+import type { GetStaticPaths, Page } from 'astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const PAGE_SIZE = 10;
+  const books = await getCollection('books');
+  return paginate(books, { pageSize: PAGE_SIZE });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props as { page: Page<CollectionEntry<'books'>> };
+---
+
+<Layout>
+	<Categories genre="All"/>
+	<BookList books={page.data} />
+	<Pagination page={page} />
+</Layout>

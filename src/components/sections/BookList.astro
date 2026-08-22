@@ -3,22 +3,18 @@
 import Book from "../elements/Book.astro";
 
 // types
-import type { Genre } from '../../types/genres';
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  genre?: Genre;
+  books: CollectionEntry<"books">[];
 }
 
-const { genre } = Astro.props;
-
-import { getCollection } from "astro:content";
-const books = await getCollection("books");
-const filteredBooks = genre ? books.filter(book => book.data.genre === genre) : books;
+const { books } = Astro.props;
 ---
 
 <section class="grid xl:grid-cols-2 justify-center gap-16 lg:p-20 p-6">
     {
-        filteredBooks.map((book) => (
+        books.map((book) => (
             <Book 
                 image={book.data.cover} 
                 title={book.data.title} 
@@ -26,7 +22,6 @@ const filteredBooks = genre ? books.filter(book => book.data.genre === genre) : 
                 year={book.data.year}
                 description={book.data.description}
                 goodreads={book.data.goodreads}
-                rating={book.data.rating}
             />
         ))
     }
